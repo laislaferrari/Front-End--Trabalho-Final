@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - SerraPet</title>
+
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- importando o css -->
+    <link rel="stylesheet" href="../css/base3.css">
+    <link rel="stylesheet" href="../css/layout3.css">
+    <link rel="stylesheet" href="../css/componentes3.css">
+<link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- importando o vLibras do site do governo -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    </head>
+
+<body>
+
+ <header>
+                <nav class="navbar navbar-expand-lg sticky-top bg-light shadow-sm">
+                        <div class="container">
+                                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                                        <img src="../img/SerraPet (1).png" alt="Logo SerraPet" height="150"
+                                                class="d-inline-block align-text-top">
+                                </a>
+
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#barraNav">
+                                        <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="barraNav">
+                                        <ul class="navbar-collapse navbar-nav ms-auto gap-5">
+                                                <li class="nav-item"><a class="nav-link active"
+                                                                href="index.html">Início</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="sobre.html">Quem
+                                                                Somos</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="adote.html">Adote</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="doacao.html">Como
+                                                                Ajudar</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="loja.html">Bazar Pet</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                                href="contatos.html">Contatos</a></li>
+                                        </ul>
+                                </div>
+                        </div>
+                </nav>
+        </header>
+
+<button class="carrinho" onclick="toggleCarrinho()"aria-label="Abrir carrinho">
+
+    🛒 <span id="contador">0</span> ▼
+
+    
+    <div id="box-carrinho" class="box-carrinho escondido">
+
+        <h3>Seu carrinho</h3>
+
+        <ul id="lista-carrinho"></ul>
+        <p><strong>Total: R$ <span id="total">0</span></strong></p>
+
+    </div>
+
+</button>
+
+
+<!-- Conteúdo principal: listagem de produtos -->
+<main class="container">
+
+    <h1 class="titulo">Nosso Bazar Solidário 🛍️</h1>
+    <p class="descricao">
+        Todos os produtos são doações e ajudam nossos animais ❤️🐱
+    </p>
+
+    <section class="row produtos" aria-label="Lista de produtos">
+
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="../img/caixa de tranporte.png"
+                     alt="Caixa de tranporte disponivel no bazar">
+
+                <h2>Caixa de transporte</h2>
+                <p>R$ 15,00</p>
+                <button onclick="adicionarCarrinho('Caixa de transporte', 15)"
+                aria-label="Comprar Caixa de tranporte por R$ 15,00">Comprar</button>
+            </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="../img/Shampoo.png"
+                     alt="Shampoo antipulgas,da marca sanol disponivel no bazar">
+
+                <h2>Shampoo</h2>
+                <p>R$ 20,00</p>
+                 <button onclick="adicionarCarrinho('Shampoo', 20)"
+                aria-label="Comprar Shampoo por R$ 20,00">Comprar</button>
+            </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card">
+        <img src="../img/roupinha.png"
+             alt="Roupa de Cachorro disponivel no bazar">
+
+        <h2>Roupinha</h2>
+        <p>R$ 10,00</p>
+         <button onclick="adicionarCarrinho('Roupinha', 10)"
+         aria-label="Comprar Roupinha por R$ 10,00">Comprar</button>
+    </div>
+</article>
+
+<article class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card">
+        <img src="../img/cone proteção.png"
+             alt="Cone de proteção disponivel no bazar">
+
+        <h2>cone proteção</h2>
+        <p>R$ 5,00</p>
+         <button onclick="adicionarCarrinho('Cone proteção', 5)"
+         aria-label="Comprar Cone proteção por R$ 5,00">Comprar</button>
+    </div>
+</article>
+
+    </section>
+
+</main>
+
+ <footer class="py-4" style="background-color: var(--escuro, #483C46); color: white;">
+                <div class="container text-center">
+                        <p class="mb-2">&copy;
+                                2026 SerraPet - Projeto Front End Essencial</p>
+
+                        <p>📍Petropolis-RJ</p>
+
+                </div>
+        </footer>
+
+<script src="../js/scriptp.js"></script>
+
+ <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+</body>
+</html>

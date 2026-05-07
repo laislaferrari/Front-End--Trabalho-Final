@@ -1,0 +1,56 @@
+
+.navbar {
+  box-shadow: 0 2px 4px var(--sombra); 
+}
+
+
+
+footer {
+  margin-top: auto;
+}
+
+
+footer a {
+  color: var(--branca);
+  transition: 0.3s;
+}
+
+
+footer a:hover {
+  color: var(--verde-claro);
+}
+
+
+footer a i {
+  transition: 0.3s;
+}
+
+footer a:hover i {
+  color: var(--verde-claro);
+}
+
+
+
+
+section {
+  width: 100%;
+}
+
+/
+section h1,
+section h2,
+section h3 {
+  margin-top: 0;
+}
+
+
+.navbar,
+footer {
+  position: relative;
+  z-index: 2;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}

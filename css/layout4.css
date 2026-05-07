@@ -1,0 +1,75 @@
+
+:root {
+    --escuro: #483C46;
+    --petroleo: #3C6E71;
+    --verde: #70AE6E;
+    --lima: #BEEE62;
+    --laranja: #F4743B;
+    --branco: #ffffff;
+    --cinza-claro: #f8f9fa;
+}
+
+.container {
+    margin: center;
+    
+}
+.layout-cabecalho--position{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f4743b;
+}
+
+section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.pagina-contatos {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.secao-formulario {
+    max-width: 600px;
+}
+
+
+.layout-principal { 
+    background: var(--petroleo);            
+    position: relative;
+}
+
+
+
+@media (max-width: 600px) {
+
+    section {
+        width: 95%;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input, textarea {
+        width: 95%;
+    }
+}

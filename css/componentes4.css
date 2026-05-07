@@ -1,0 +1,81 @@
+/* Títulos */
+h2 {
+    color: #3C6E71;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #483C46;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #F4743B;
+}
+
+.fa-phone {
+    color: #3C6E71;
+}
+
+.fa-envelope {
+    color: #F4743B;
+}
+
+.fa-whatsapp {
+    color: #25D366;
+}
+
+.fa-instagram {
+    color: #E1306C;
+}
+
+.fa-facebook {
+    color: #1877F2;
+}
+
+/* Formulário */
+input, textarea {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #F4743B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d85f2f;
+}
+/* animação */
+section {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    letter-spacing: 1px;
+}

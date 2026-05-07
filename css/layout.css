@@ -1,0 +1,26 @@
+
+#barraNav .navbar-nav {
+    background-color: transparent;     
+    padding: 2rem 0;  
+        
+}   
+.nav-link {
+    color: var(--escuro) !important;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;    
+    
+}
+.nav-link:hover {
+    color: var(--laranja) !important; 
+    transform: scale(1.2);    
+}
+.layout-principal { 
+    background: var(--petroleo);            
+    position: relative;
+}
+
+footer {
+    background-color: var(--escuro);
+    color: var(--branco);
+}

@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIÁVEIS GLOBAIS */
+:root {
+    --verde-claro: #beee62;
+    --verde-medio: #70ae6e;
+    --verde-azulado: #3c6e71;
+    --laranja: #f4743b;
+    --roxo-escuro: #483c46;
+    --creme: #fef9f0;
+    --branca: #ffffff;
+    --texto-escuro: #2d2a2e;
+
+    --sombra: rgba(0, 0, 0, 0.08);
+    --sombra-suave: 0 8px 20px var(--sombra);
+    --overlay: rgba(60, 110, 113, 0.1);
+    --overlay-ativo: rgba(60, 110, 113, 0.15);
+
+    --fonte-principal: "Roboto", sans-serif;
+    --espacamento-pequeno: 8px;
+    --espacamento-medio: 16px;
+    --raio-borda: 8px;
+    --raio-borda-grande: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--creme);
+}

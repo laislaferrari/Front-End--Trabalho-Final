@@ -1,0 +1,86 @@
+/* CARD */
+.card {
+    background: var(--verde-claro);
+    padding: var(--espacamento-medio);
+    border-radius: var(--raio-borda-grande);
+    text-align: center;
+    margin-bottom: var(--espacamento-medio);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: var(--raio-borda);
+}
+
+.card button {
+    margin-top: var(--espacamento-pequeno);
+    background-color: var(--laranja);
+    color: var(--branca);
+    border: none;
+    padding: var(--espacamento-pequeno);
+    border-radius: var(--raio-borda);
+    cursor: pointer;
+}
+
+/* CARRINHO */
+.carrinho {
+    position: absolute;
+    right: 15px;
+    top: 15%;
+    width: 8rem;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--branca);
+    background-color: var(--verde-medio);
+    border: solid var(--verde-claro);
+    border-radius: var(--raio-borda-grande);
+    z-index: 1000;
+    
+}
+
+.box-carrinho {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    background: var(--verde-medio);
+    color: var(--texto-escuro);
+    padding: var(--espacamento-medio);
+    border-radius: var(--raio-borda);
+    box-shadow: var(--sombra-suave);
+   
+}
+
+.escondido {
+    display: none;
+}
+
+#contador {
+    background: var(--laranja);
+    color: var(--branca);
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: var(--espacamento-pequeno);
+}
+
+#lista-carrinho {
+    list-style: none;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+/* RESPONSIVIDADE - carrinho */
+@media (max-width: 600px) {
+    .carrinho {
+        top: 120px;
+        right: 10px;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,60 @@
+
+:root {
+    --escuro: #483C46;
+    --petroleo: #3C6E71;
+    --verde: #70AE6E;
+    --lima: #BEEE62;
+    --laranja: #F4743B;
+    --branco: #ffffff;
+    --cinza-claro: #f8f9fa;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--escuro);
+    line-height: 1.1;
+    background-color: var(--branco);
+}
+
+img {
+    max-width: 20rem;
+    height: auto;    
+}
+
+.navbar {
+    background-color: var(--petroleo);
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.btn-primary {
+    background-color: var(--laranja);
+    border: none;
+    
+}
+
+footer {
+    background-color: var(--escuro);
+    color: white;
+}
+
+.card {
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+
+    transform: translateY(-10px);  
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); 
+}
+
+.btn-primary {
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+   transform: scale(1.05); 
+}
