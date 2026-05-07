@@ -37,7 +37,7 @@ function renderizarCaes() {
     <h5 class="cartao-pet__nome">${cao.nome}</h5>
     <p class="small text-muted mb-1"><strong>Raça:</strong> ${cao.raca}</p>
     <p class="small text-muted mb-3"><strong>Idade:</strong> ${cao.idade}</p>
-    <a href="adote.html" class="btn cartao-pet__botao w-100">Quero Adotar ou Apadrinhar!</a>
+    <a href="/html/adote.html" class="btn cartao-pet__botao w-100">Quero Adotar ou Apadrinhar!</a>
     </div>
     </div>
     </div>
