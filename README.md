@@ -35,6 +35,7 @@ Este projeto foi construído de forma colaborativa:
 Laís Ferrari do Amaral
 Leonam Nogueira
 Leonardo de Mattos Veiga
+Mariana Alves de Oliveira
 Patrick Vinícius
 Roberta Rocha
 ```
